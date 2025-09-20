@@ -1,7 +1,16 @@
-export default function App() {
+import ScoreCard from "./components/scoreCard";
+const App = () => {
   return (
-<>
-<h1 className="text-4xl font-bold text-teal-600">Hello World</h1>
-</>
+    <>
+<div className="flex flex-row gap-4 w-full bg-red-200">
+      <ScoreCard post="Total Members" score={12345}  />
+      <ScoreCard post="Total Post" score={1234} />
+      <ScoreCard post="Total Comments" score={1234} />
+      <ScoreCard post="Server Load" score={24.23} />
+      
+</div>
+    </>
   );
-}
+};
+
+export default App;
